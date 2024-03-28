@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selector Examples</title>
+<style>
+    h2 + p {
+        font-style: italic;
+    }
+
+    h2 ~ p {
+        color: blue;
+    }
+
+    p::first-line {
+        font-weight: bold;
+    }
+
+    div::after {
+        content: " (Additional Content)";
+    }
+</style>
+</head>
+<body>
+    <h2>Adjacent Sibling Selector Example</h2>
+    <p>This paragraph will be italic because it's directly adjacent to the h2 element.</p>
+    
+    <h2>General Sibling Selector Example</h2>
+    <p>This paragraph will be blue because it's a sibling of h2 element.</p>
+    
+    <h2>Pseudo-Element Selector Example</h2>
+    <p>This paragraph's first line will be bold.</p>
+    <div>This content will have additional content added after it.</div>
+</body>
+</html>
