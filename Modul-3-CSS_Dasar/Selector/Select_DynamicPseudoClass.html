@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML for Descendant and Child Selector</title>
+    <style>
+        /* Descendant Selector */
+        div p {
+            font-size: x-large;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This paragraph will have an x-large font size because it's a descendant of a div.</p>
+        <section>
+            <p>This paragraph will also have an x-large font size because it's a descendant of a div.</p>
+            <p>This paragraph will have a cornflowerblue color because it's a direct child of a div.</p>
+        </section>
+    </div>
+</body>
+</html>
